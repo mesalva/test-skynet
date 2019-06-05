@@ -1,55 +1,29 @@
-# Robot Name
-
-Manage robot factory settings.
-
-When robots come off the factory floor, they have no name.
-
-The first time you boot them up, a random name is generated in the format
-of two uppercase letters followed by three digits, such as RX837 or BC811.
-
-Every once in a while we need to reset a robot to its factory settings,
-which means that their name gets wiped. The next time you ask, it will
-respond with a new random name.
-
-The names must be random: they should not follow a predictable sequence.
-Random names means a risk of collisions. Your solution must ensure that
-every existing robot has a unique name.
+# Introdução
+A Skynet decidiu produzir androids em massa, cada android deve possuir um número de série ALEATÓRIO e ÚNICO no formato LLNNN, ou seja: letra + letra + número + número + número.
+Por exemplo: TW232 ou MS120
 
 
-In order to make this easier to test, your solution will need to implement a
-`Robot.forget` method that clears any shared state that might exist to track
-duplicate robot names.
-
-Bonus points if this method does not need to do anything for your solution.
+Às vezes um android sofre alguma falha e deve ser resetado. Quando isso acontecer, este android deve ter receber um novo número de série e o número de série antigo nunca mais pode ser utilizado.
 
 
-
-* * * *
-
-For installation and learning resources, refer to the
-[Ruby resources page](http://exercism.io/languages/ruby/resources).
-
-For running the tests provided, you will need the Minitest gem. Open a
-terminal window and run the following command to install minitest:
-
-    gem install minitest
-
-If you would like color output, you can `require 'minitest/pride'` in
-the test file, or note the alternative instruction, below, for running
-the test file.
-
-Run the tests from the exercise directory using the following command:
-
-    ruby robot_name_test.rb
-
-To include color from the command line:
-
-    ruby -r minitest/pride robot_name_test.rb
+Note, os números de série devem ser aleatórios, ou seja, o android AA002 não deve vir depois do android AA001 (a não ser que isso seja uma tremenda coincidência).
 
 
-## Source
+Sua solução deve garantir que nunca hajam 2 robôs com o mesmo número de série.
 
-A debugging session with Paul Blackwell at gSchool. [http://gschool.it](http://gschool.it)
+## Problema
+Modifique a classe Android do arquivo android.rb para que atenda os pré-requisitos acima
 
-## Submitting Incomplete Solutions
-It's possible to submit an incomplete solution so you can see how others have completed the exercise.
+## Ajudinha
+Para ajudar, criamos um arquivo de testes com 2 testes
+- Valida se o número de série segue o padrão estabelecido no problema
+- Valida se ao rodar o comando resetar o número do android mudou (esse teste está quebrado de propósito, no meio da sua trajetória para solucionar o problema ele deve se solucionar sozinho)
+
+Se você quiser rodar os testes basta rodar o comando no terminal: 
+gem install minitest
+ ruby android_test.rb
+
+## Licença poética
+Esteja livre para modificar (levemente) o problema caso seja do seu interesse, queremos entender sua linha de raciocínio e como você programa.
+Caso queira adicionar mais testes, comentar seu código, adicionar ou modificar a documentação, sinta-se a vontade
+
