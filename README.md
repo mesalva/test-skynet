@@ -1,5 +1,5 @@
 # Introdução
-A Skynet decidiu produzir androids em massa, cada android deve possuir um número de série ALEATÓRIO e ÚNICO no formato LLNNN, ou seja: letra + letra + número + número + número.
+A Skynet decidiu produzir androids em massa, cada android deve possuir um número de série **ALEATÓRIO** e **ÚNICO** no formato **LLNNN**, ou seja: letra + letra + número + número + número.
 Por exemplo: TW232 ou MS120
 
 
@@ -12,12 +12,12 @@ Note, os números de série devem ser aleatórios, ou seja, o android AA002 não
 Sua solução deve garantir que nunca hajam 2 robôs com o mesmo número de série.
 
 ## Problema
-Modifique a classe Android do arquivo android.rb para que atenda os pré-requisitos acima
+Modifique a classe **Android** do arquivo **android.rb** para que atenda os pré-requisitos acima
 
 ## Ajudinha
 Para ajudar, criamos um arquivo de testes com 2 testes
 - Valida se o número de série segue o padrão estabelecido no problema
-- Valida se ao rodar o comando resetar o número do android mudou (esse teste está quebrado de propósito, no meio da sua trajetória para solucionar o problema ele deve se solucionar sozinho)
+- Valida se ao rodar o comando **resetar** o número do android mudou *(esse teste está quebrado de propósito, no meio da sua trajetória para solucionar o problema ele deve se solucionar sozinho)*
 
 Se você quiser rodar os testes basta rodar o comando no terminal: 
 gem install minitest
