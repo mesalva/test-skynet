@@ -1,0 +1,40 @@
+{
+  "name": "test-skynet",
+  "version": "1.0.0",
+  "description": "A Skynet decidiu produzir androids em massa, cada android deve possuir um número de série **ALEATÓRIO** e **ÚNICO** no formato **LLNNN**, ou seja: letra + letra + número + número + número. Por exemplo: TW232 ou MS120",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mesalva/test-skynet.git"
+  },
+  "author": "Andre Antunes Vieira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mesalva/test-skynet/issues"
+  },
+  "jest": {
+    "verbose": true,
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "globals": {
+      "NODE_ENV": "test"
+    },
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "moduleDirectories": [
+      "node_modules"
+    ]
+  },
+  "homepage": "https://github.com/mesalva/test-skynet#readme",
+  "devDependencies": {
+    "babel-jest": "^24.8.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "jest": "^24.8.0",
+    "raf": "^3.4.1"
+  }
+}
